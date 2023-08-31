@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+
+@font-face {
+    font-family: nasin-nanpa;
+    src: url(nasin-nanpa-2.5.1.otf) format("opentype");
+}
+
+body {
+    background-image: url(Media/noisy_net.png);
+    padding: 0;
+    margin: 0;
+    font-family: 'Kaisei Decol', nasin-nanpa, serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.vert{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+.centerText {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border-width: 0;
+    border-top-width: 2.5px;
+    border-style:dashed;
+    color: #9caca8;
+}
+
+.shorthr {
+    margin: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.noDot {
+    list-style-type: none;
+}
+.noPadLi {
+    padding: 0;
+}
+.padLi {
+    padding-left: 40px;
+}
+
+.zoomL {
+    z-index: 200;
+    position: relative;
+    transition: transform .2s;
+    transform-origin: left;
+}
+.zoomL:hover {
+    transform: scale(2);
+    transform-origin: left;
+}
+
+.emojiThing {
+    display: inline;
+    width: auto !important;
+    height: 1.5em;
+}
+
+
+.color {
+    width: 1em;
+    height: 1em;
+    background-color: #5c448d;
+    border-radius: 50%;
+}
+
+/*----------------------------------------------------*/
+/*---------------------Header-------------------------*/
+/*----------------------------------------------------*/
+
+#headerStuff {
+    background-image: url(Media/light_noise_diagonal);
+    background-clip: content-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #14191E;
+    width: 800px;
+    height: 184;
+    user-select: none;
+}
+#header img {
+    pointer-events: none;
+}
+
+#headerContent {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+
+#mainHeaderContent h1,
+#mainHeaderContent h5 {
+    margin: 0;
+}
+#mainHeaderContent h1{
+    font-size: 4em;
+}
+#mainHeaderContent h5{
+    font-size: 2em;
+}
+#mainHeaderContent {
+    background-image: url(Media/light_noise_diagonal.png);
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+}
+#leftHeaderContent {
+    height: 150px;
+}
+#leftHeaderContent img {
+    width: 150px;
+    height: 150px;
+
+    border-bottom-right-radius: 15px;
+}
+
+#rightHeaderContent {
+    height: 150px;
+}
+#rightHeaderContent img {
+    width: 150px;
+    height: 150px;
+
+    border-bottom-left-radius: 15px;
+}
+
+#headerDropdown {
+    background-image: url(Media/light_noise_diagonal.png);
+    border-radius: 15px 15px 10px 10px;
+    background-color: transparent;
+    padding: 5px;
+    transition: 0.6s;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+#headerDropdown p {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+#headerDropdown a:hover {
+    background-color: #14191E;
+    color: #F3F5F4;
+    opacity: 0.9;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+#headerDropdown a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*----------------------------------------------------*/
+/*---------------------Content------------------------*/
+/*----------------------------------------------------*/
+
+/*#content {
+    width: 825px;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #F3F5F4;
+}
+*/
+
+#content {
+    color: #F3F5F4;
+    height: calc(100vh - 250px);
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 80% auto;
+    transition: 0.6s;
+    grid-row-gap: 20px;
+}
+
+#contentBG {
+    border: 4px double #F3F5F4; 
+    border-radius: 20px; 
+    padding: 20px;
+    overflow:auto;
+    transition: 0.6s;
+    text-align: center;
+}
+
+#contentMain {
+    border: 4px double #F3F5F4; 
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y:scroll;
+    transition: 0.6s;
+}
+
+.contH1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+}
+
+
+
+/*----------------------------------------------------*/
+/*----------------------People------------------------*/
+/*----------------------------------------------------*/
+
+.peopleTemplate {
+    text-align: center;
+}
+
+.peopleTemplate > *:nth-child(-n+2) {
+    display: inline-block;
+}
+
+.peopleDesc {
+    margin: 0 50px 0 50px;
+    border-radius: 25px;
+    border-width: 2.5px;
+    border-style:dashed;
+}
+
+
+/*----------------------------------------------------*/
+/*---------------------Structure----------------------*/
+/*----------------------------------------------------*/
+
+
+#headspaceImgAndAnnotation img {
+    width: 50%;
+    margin: 20px;
+    float: left;
+}
+#legend > li > *{
+    display: inline-block;
+}
+
+/*----------------------------------------------------*/
+/*--------------------Other---------------------*/
+/*----------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F3F5F4;
+    border-radius: 100%;
+}
