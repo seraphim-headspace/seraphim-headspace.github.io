@@ -1,2 +1,4 @@
-# seraphim-headspace.github.io
-Headspace website
+# Headspace
+Headspace website for Seraphim.
+
+Still a WIP!!!
