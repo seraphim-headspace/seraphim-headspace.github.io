@@ -58,7 +58,6 @@ hr {
 }
 
 .zoomL {
-    z-index: 200;
     position: relative;
     transition: transform .2s;
     transform-origin: left;
@@ -71,7 +70,7 @@ hr {
 .emojiThing {
     display: inline;
     width: auto !important;
-    height: 1.5em;
+    height: 2em;
 }
 
 
@@ -230,6 +229,10 @@ hr {
     display: inline-block;
 }
 
+.peopleTemplate p {
+    padding: 20px;
+}
+
 .peopleDesc {
     margin: 0 50px 0 50px;
     border-radius: 25px;
@@ -237,6 +240,44 @@ hr {
     border-style:dashed;
 }
 
+.pdL{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.pdR{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.pdL {
+    text-align: right;
+}
+.pdL .peopleImg {
+    left: -20px;
+}
+
+.pdR {
+    text-align: left;
+}
+.pdR .peopleImg {
+    left: 20px;
+}
+
+.peopleImg {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    transform: scale(1.3);
+    position: relative;
+    transition: .2s;
+    border-radius: 50%;
+    border-width: 2.5px;
+    border-style: dashed;
+}
+.peopleImg:hover {
+    transform: scale(1.7);
+    transition: .1s;
+}
 
 /*----------------------------------------------------*/
 /*---------------------Structure----------------------*/
@@ -247,6 +288,7 @@ hr {
     width: 50%;
     margin: 20px;
     float: left;
+    border-radius: 50%;
 }
 #legend > li > *{
     display: inline-block;
