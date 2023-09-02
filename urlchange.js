@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         if (fragmentIdentifier === 'info') {
-            const peopleButton = document.getElementById('peopleButton');
+            const peopleButton = document.getElementById('infoButton');
             if (infoButton) {
                 infoButton.click();
             }
