@@ -12,9 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Replace the text with an empty string
     div.textContent = '';
-
-    // Optionally, you can also add a class for styling purposes
-    div.classList.add('hidden-text');
     });
 
     
