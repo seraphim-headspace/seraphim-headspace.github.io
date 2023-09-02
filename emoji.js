@@ -8,3 +8,4 @@
 */
 
 document.body.innerHTML = document.body.innerHTML.replace(/:autism:/g, '<img draggable="false" class="emojiThing" alt="autism" src="https://cdn.discordapp.com/emojis/1126378457568395384.webp?size=44&quality=lossless">');
+document.body.innerHTML = document.body.innerHTML.replace(/:aroundthewoorld:/g, '<img draggable="false" class="emojiThing" alt="autism" src="https://caterpie.crd.co/assets/images/gallery17/135d8cbe.gif?v=8cec5808">');
