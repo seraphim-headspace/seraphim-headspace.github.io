@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('load', function() {
         const fragmentIdentifier = window.location.hash.substring(1);
         if (fragmentIdentifier === 'home') {
-            const peopleButton = document.getElementById('homeButton');
+            const homeButton = document.getElementById('homeButton');
             if (homeButton) {
                 homeButton.click();
             }
@@ -33,19 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         if (fragmentIdentifier === 'structure') {
-            const peopleButton = document.getElementById('structButton');
+            const structButton = document.getElementById('structButton');
             if (structButton) {
                 structButton.click();
             }
         }
         if (fragmentIdentifier === 'history') {
-            const peopleButton = document.getElementById('historyButton');
+            const historyButton = document.getElementById('historyButton');
             if (historyButton) {
                 historyButton.click();
             }
         }
         if (fragmentIdentifier === 'info') {
-            const peopleButton = document.getElementById('infoButton');
+            const infoButton = document.getElementById('infoButton');
             if (infoButton) {
                 infoButton.click();
             }
