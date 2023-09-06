@@ -172,7 +172,8 @@ hr {
 /*---------------------Content------------------------*/
 /*----------------------------------------------------*/
 
-/*#content {
+/*
+#content {
     width: 825px;
     margin: 0 auto;
     margin-top: 15px;
@@ -182,7 +183,7 @@ hr {
 
 #content {
     color: #F3F5F4;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 300px);
     margin: 0 auto;
     width: 800px;
     margin-top: 20px;
